@@ -1,0 +1,17 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: "@testing-library/user-event"
+    versions:
+    - 13.0.16
+    - 13.0.6
+    - 13.1.1
+    - 13.1.2
+  - dependency-name: "@testing-library/jest-dom"
+    versions:
+    - 5.11.10
